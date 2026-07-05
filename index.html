@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  MOHAMED AYMAN — PORTFOLIO  /  Modern Brutalist · Editorial
+  ============================================================
+  QUICK EDIT POINTS (search for these markers):
+    [EDIT:NAME]      → your display name in the hero
+    [EDIT:PHONE]      → WhatsApp number (intl format, no +)
+    [EDIT:EMAIL]      → contact email used by the proposal form
+    [EDIT:SOCIAL]     → Instagram / TikTok / Facebook / GitHub / LinkedIn URLs
+    [EDIT:PROJECTS]   → the 3 featured project cards
+  ============================================================
+-->
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohamed Ayman — Full-Stack Developer</title>
+<meta name="description" content="Mohamed Ayman — Full-Stack Engineer. Systems, e-commerce UX, and modern brutalist interfaces." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-ink text-paper antialiased selection:bg-proof selection:text-ink">
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-proof focus:text-ink font-mono text-xs uppercase px-3 py-2">Skip to content</a>
+
+<div id="progress-bar"></div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<div class="spine" aria-hidden="true">
+  <span>MOHAMED AYMAN &nbsp;—&nbsp; FULL-STACK DEVELOPER &nbsp;—&nbsp; VOL. 01 / 2026 &nbsp;—&nbsp; MOHAMED AYMAN &nbsp;—&nbsp; FULL-STACK DEVELOPER</span>
+</div>
+
+<!-- [EDIT:PHONE] replace 201001234567 with your WhatsApp number, intl format, no plus sign -->
+<a class="tab-msg" href="https://wa.me/201020735937?text=Hi%20Mohamed%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener">
+  MESSAGE&nbsp;ME
+</a>
+
+<!-- ============================================================ NAV ============================================================ -->
+<header class="fixed top-0 inset-x-0 z-50" id="site-nav">
+  <nav class="flex items-center justify-between px-5 md:px-10 lg:px-16 py-4 md:py-5 transition-colors duration-300" id="nav-inner">
+    <a href="#hero" class="font-mono text-xs tracking-[0.2em] border border-paper/40 px-3 py-2 hover:bg-paper hover:text-ink transition-colors">M·A</a>
+
+    <div class="hidden md:flex items-center gap-8 font-mono text-[11px] tracking-[0.18em] uppercase">
+      <a href="#results" class="hover:text-proof transition-colors">Results</a>
+      <a href="#stack" class="hover:text-proof transition-colors">Stack</a>
+      <a href="#work" class="hover:text-proof transition-colors">Work</a>
+      <a href="#contact" class="hover:text-proof transition-colors">Contact</a>
+    </div>
+
+    <div class="hidden md:block">
+      <a href="https://wa.me/201020735937" target="_blank" rel="noopener" class="font-mono text-[11px] tracking-[0.15em] uppercase border border-paper/40 px-4 py-2 hover:bg-proof hover:border-proof hover:text-ink transition-colors">
+        Let's Talk →
+      </a>
+    </div>
+
+    <button id="hamburger" aria-label="Open menu" aria-expanded="false" class="md:hidden flex flex-col gap-[5px] w-8">
+      <span class="block h-[2px] w-full bg-paper"></span>
+      <span class="block h-[2px] w-full bg-paper"></span>
+    </button>
+  </nav>
+</header>
+
+<!-- ============================================================ MOBILE NAV OVERLAY ============================================================ -->
+<div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="flex items-center justify-between px-5 py-4">
+    <span class="font-mono text-xs tracking-[0.2em] text-paper">M·A</span>
+    <button id="close-menu" aria-label="Close menu" class="text-paper font-mono text-xs tracking-[0.2em] border border-paper/40 px-3 py-2">CLOSE ✕</button>
+  </div>
+  <nav class="flex flex-col justify-center h-[78vh] px-7 gap-2">
+    <a data-mnav href="#results" class="f-display text-paper text-5xl py-3 border-b border-paper/15 flex items-baseline gap-4"><span class="font-mono text-sm text-proof">01</span>Results</a>
+    <a data-mnav href="#stack"   class="f-display text-paper text-5xl py-3 border-b border-paper/15 flex items-baseline gap-4"><span class="font-mono text-sm text-proof">02</span>Stack</a>
+    <a data-mnav href="#work"    class="f-display text-paper text-5xl py-3 border-b border-paper/15 flex items-baseline gap-4"><span class="font-mono text-sm text-proof">03</span>Work</a>
+    <a data-mnav href="#contact" class="f-display text-paper text-5xl py-3 border-b border-paper/15 flex items-baseline gap-4"><span class="font-mono text-sm text-proof">04</span>Contact</a>
+  </nav>
+  <div class="absolute bottom-0 inset-x-0 px-7 py-6 flex gap-6 font-mono text-[11px] tracking-[0.15em] uppercase text-paper/60">
+    <!-- [EDIT:SOCIAL] -->
+    <a href="https://www.instagram.com/moham3d_a6man" target="_blank" rel="noopener" class="hover:text-proof">IG</a>
+    <a href="https://github.com/madva33" target="_blank" rel="noopener" class="hover:text-proof">GH</a>
+    <a href="www.linkedin.com/in/mohamed-ayman-3967ab324" target="_blank" rel="noopener" class="hover:text-proof">IN</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============================================================ 1. HERO ============================================================ -->
+  <section id="hero" class="relative min-h-screen flex flex-col bg-ink overflow-hidden">
+    <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+    <div class="relative z-10 flex-1 flex flex-col px-5 md:px-10 lg:px-16 pt-24 md:pt-28">
+
+      <!-- folio header -->
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/60 border-b border-paper/15 pb-4">
+        <span>VOL. 01 / 2026</span>
+        <span class="hidden sm:inline">/ FULL-STACK DEVELOPER</span>
+        <span>P. 001</span>
+      </div>
+
+      <!-- name -->
+      <div class="flex-1 flex flex-col justify-center py-10">
+        <h1 class="h-hero text-paper">
+          <!-- [EDIT:NAME] -->
+          MOHAMED<br/>
+          <span class="text-stroke" style="-webkit-text-stroke:2px #F2EFE6; color:#0E0E0D;">AYMAN</span>
+        </h1>
+
+        <div class="mt-8 md:mt-10 max-w-xl">
+          <p class="font-mono uppercase text-xs md:text-sm tracking-[0.12em] text-proof mb-3">
+            Tech Solutions. Full-Stack Engineering. Digital Partner.
+          </p>
+          <p class="text-paper/70 text-base md:text-lg leading-relaxed">
+            I design and build full-stack products end to end — from database schema to the pixel that ships. No template thinking. Systems that hold up under real use.
+          </p>
+        </div>
+
+        <div class="mt-9 flex flex-wrap items-center gap-4">
+          <a href="https://wa.me/201020735937?text=Hi%20Mohamed%2C%20I%27d%20like%20to%20start%20a%20project." target="_blank" rel="noopener"
+             class="inline-flex items-center gap-3 bg-proof text-ink font-mono uppercase text-xs tracking-[0.15em] px-6 py-4 hover:bg-paper transition-colors">
+            Message on WhatsApp →
+          </a>
+          <a href="#work" class="font-mono uppercase text-xs tracking-[0.15em] text-paper/70 hover:text-proof border-b border-paper/30 pb-1 transition-colors">
+            View the work ↓
+          </a>
+        </div>
+      </div>
+
+      <!-- folio footer / scroll cue -->
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/50 border-t border-paper/15 py-4">
+        <span>EELU · TANTA, EGYPT</span>
+        <span class="flex items-center gap-2"><span class="blink">↓</span> SCROLL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 2. PROVEN RESULTS ============================================================ -->
+  <section id="results" class="relative bg-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/50 border-b border-paper/15 py-4">
+        <span>/ 02 — THE NUMBERS</span>
+        <span>P. 002</span>
+      </div>
+
+      <h2 class="h-section text-paper pt-12 reveal">PROVEN<br/>RESULTS</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 mt-14 border-t border-paper/15">
+        <div class="p-8 md:p-10 border-b md:border-b-0 md:border-r border-paper/15 reveal" data-d="1">
+          <div class="num-stat text-proof">10+</div>
+          <div class="font-mono uppercase text-xs tracking-[0.15em] text-paper/60 mt-3 mb-3">Projects Shipped</div>
+          <p class="text-paper/70 leading-relaxed">From ML pipelines to full e-commerce platforms — built start to finish, not just prototyped.</p>
+        </div>
+        <div class="p-8 md:p-10 border-b md:border-b-0 md:border-r border-paper/15 reveal" data-d="2">
+          <div class="num-stat text-proof">5+</div>
+          <div class="font-mono uppercase text-xs tracking-[0.15em] text-paper/60 mt-3 mb-3">Stacks Mastered</div>
+          <p class="text-paper/70 leading-relaxed">JavaScript, Python, Java, SQL — I pick the tool the project demands, not the one I'm comfortable with.</p>
+        </div>
+        <div class="p-8 md:p-10 reveal" data-d="3">
+          <div class="num-stat text-proof">100%</div>
+          <div class="font-mono uppercase text-xs tracking-[0.15em] text-paper/60 mt-3 mb-3">Deadline Delivery</div>
+          <p class="text-paper/70 leading-relaxed">Every academic and personal build, shipped on time, every time. No excuses, no slipped dates.</p>
+        </div>
+      </div>
+
+      <div class="border-t border-paper/15 py-14 md:py-20 reveal">
+        <p class="font-mono text-proof text-2xl md:text-3xl leading-none mb-5">"</p>
+        <p class="text-2xl md:text-4xl leading-snug max-w-3xl">
+          I don't build websites. I build systems that hold up under real use.
+        </p>
+        <p class="font-mono uppercase text-xs tracking-[0.15em] text-paper/50 mt-6">— MOHAMED AYMAN</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 3. TECH STACK (light / inverted page) ============================================================ -->
+  <section id="stack" class="relative bg-paper text-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-ink/50 border-b border-ink/15 py-4">
+        <span>/ 03 — TOOLKIT</span>
+        <span>P. 003</span>
+      </div>
+
+      <h2 class="h-section text-ink pt-12 reveal">MY<br/>TECHNOLOGIES</h2>
+      <p class="text-ink/70 text-base md:text-lg max-w-xl mt-6 reveal">
+        I don't force a specific stack — I deploy what the project demands.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-12 mt-14 pb-20 border-t border-ink/15 pt-12">
+        <div class="reveal" data-d="1">
+          <div class="font-mono uppercase text-xs tracking-[0.18em] text-proof mb-5">/ Frontend</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">HTML5</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">CSS3</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Tailwind CSS</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">JavaScript (ES6+)</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">React</span>
+          </div>
+        </div>
+
+        <div class="reveal" data-d="2">
+          <div class="font-mono uppercase text-xs tracking-[0.18em] text-proof mb-5">/ Backend &amp; Data</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">SQL Server</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">REST APIs</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Scikit-learn</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Node.js</span>
+          </div>
+        </div>
+
+        <div class="reveal" data-d="3">
+          <div class="font-mono uppercase text-xs tracking-[0.18em] text-proof mb-5">/ E-Commerce UX</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Cart &amp; Checkout UX</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Auth &amp; Favorites Flows</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">LocalStorage State</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">Glassmorphic UI</span>
+            <span class="opt-box border border-ink/25 font-mono text-xs uppercase tracking-wide px-3 py-2">RTL / i18n</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 4. AGENCY FORCE (dark) ============================================================ -->
+  <section id="capabilities" class="relative bg-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/50 border-b border-paper/15 py-4">
+        <span>/ 04 — HOW I OPERATE</span>
+        <span>P. 004</span>
+      </div>
+
+      <h2 class="h-section text-paper pt-12 reveal">THE AGENCY<br/>FORCE</h2>
+      <p class="text-paper/70 text-base md:text-lg max-w-2xl mt-6 reveal">
+        I treat every build like a small agency would — not just code, but positioning, growth thinking, and presentation. One person, four disciplines, no hand-offs lost in translation.
+      </p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-14 border-t border-l border-paper/15">
+        <div class="p-8 border-r border-b border-paper/15 reveal" data-d="1">
+          <div class="font-mono text-proof text-xs mb-6">01</div>
+          <div class="f-display text-2xl mb-3">TECH</div>
+          <p class="text-paper/60 text-sm leading-relaxed">Architecture, code, and systems that don't fall over.</p>
+        </div>
+        <div class="p-8 border-r border-b border-paper/15 reveal" data-d="2">
+          <div class="font-mono text-proof text-xs mb-6">02</div>
+          <div class="f-display text-2xl mb-3">GROWTH</div>
+          <p class="text-paper/60 text-sm leading-relaxed">Performance, structure, and conversion-minded builds.</p>
+        </div>
+        <div class="p-8 border-r border-b border-paper/15 reveal" data-d="3">
+          <div class="font-mono text-proof text-xs mb-6">03</div>
+          <div class="f-display text-2xl mb-3">MARKET</div>
+          <p class="text-paper/60 text-sm leading-relaxed">Positioning that makes the product make sense.</p>
+        </div>
+        <div class="p-8 border-r border-b border-paper/15 reveal" data-d="4">
+          <div class="font-mono text-proof text-xs mb-6">04</div>
+          <div class="f-display text-2xl mb-3">MEDIA</div>
+          <p class="text-paper/60 text-sm leading-relaxed">Visual systems and content that carry the brand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 5. SERVICES (light / inverted) ============================================================ -->
+  <section id="services-section" class="relative bg-paper text-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-ink/50 border-b border-ink/15 py-4">
+        <span>/ 05 — SERVICES</span>
+        <span>P. 005</span>
+      </div>
+
+      <h2 class="h-section text-ink pt-12 reveal">YOUR DIGITAL<br/>PARTNER</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-ink/15 mt-14 mb-20">
+        <div class="bg-paper p-9 md:p-10 reveal" data-d="1">
+          <div class="font-mono text-proof text-xs tracking-[0.15em] mb-4">/ 01</div>
+          <div class="f-display text-3xl mb-4">SYSTEMS</div>
+          <p class="text-ink/70 text-sm leading-relaxed">Full-stack engineering, custom ERPs. End-to-end builds, from database schema to deployed interface.</p>
+        </div>
+        <div class="bg-paper p-9 md:p-10 reveal" data-d="2">
+          <div class="font-mono text-proof text-xs tracking-[0.15em] mb-4">/ 02</div>
+          <div class="f-display text-3xl mb-4">E-COMM</div>
+          <p class="text-ink/70 text-sm leading-relaxed">Storefronts, cart systems, CRO. Conversion-focused commerce experiences, built to actually sell.</p>
+        </div>
+        <div class="bg-paper p-9 md:p-10 reveal" data-d="3">
+          <div class="font-mono text-proof text-xs tracking-[0.15em] mb-4">/ 03</div>
+          <div class="f-display text-3xl mb-4">UI/UX</div>
+          <p class="text-ink/70 text-sm leading-relaxed">Frictionless user journeys, modern brutalist design. Interfaces with a point of view.</p>
+        </div>
+        <div class="bg-paper p-9 md:p-10 reveal" data-d="4">
+          <div class="font-mono text-proof text-xs tracking-[0.15em] mb-4">/ 04</div>
+          <div class="f-display text-3xl mb-4">CONSULT</div>
+          <p class="text-ink/70 text-sm leading-relaxed">Tech strategy, architecture review, build audits. A second opinion on what to build next.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 6. FEATURED PROJECTS (dark) — [EDIT:PROJECTS] ============================================================ -->
+  <section id="work" class="relative bg-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/50 border-b border-paper/15 py-4">
+        <span>/ 06 — SELECTED WORK</span>
+        <span>P. 006</span>
+      </div>
+      <h2 class="h-section text-paper pt-12 reveal">STUFF I<br/>BUILT</h2>
+
+      <!-- PROJECT 01 — APEX -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-paper/15 mt-14 py-14 reveal">
+        <div class="bg-charcoal aspect-[4/3] relative overflow-hidden border border-paper/10">
+          <svg viewBox="0 0 400 300" class="w-full h-full" aria-hidden="true">
+            <rect width="400" height="300" fill="#1A1A18"/>
+            <g stroke="#3a3834" stroke-width="1">
+              <line x1="0" y1="75" x2="400" y2="75"/><line x1="0" y1="150" x2="400" y2="150"/><line x1="0" y1="225" x2="400" y2="225"/>
+              <line x1="100" y1="0" x2="100" y2="300"/><line x1="200" y1="0" x2="200" y2="300"/><line x1="300" y1="0" x2="300" y2="300"/>
+            </g>
+            <rect x="100" y="75" width="100" height="75" fill="#E8431E"/>
+            <circle cx="300" cy="225" r="34" fill="none" stroke="#F2EFE6" stroke-width="2"/>
+          </svg>
+          <span class="absolute bottom-3 left-3 font-mono text-[10px] tracking-[0.2em] text-paper/50 uppercase">FIG. 01</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="font-mono text-xs text-paper/50 tracking-[0.15em] uppercase mb-2">2026 — Full-Stack / Front-End</div>
+          <h3 class="h-project text-paper mb-3">APEX</h3>
+          <p class="font-mono uppercase text-xs tracking-[0.12em] text-proof mb-4">Full-Stack Car Dealership Showroom</p>
+          <p class="text-paper/70 leading-relaxed mb-6 max-w-md">A dark, glassmorphic e-commerce experience rebuilt from the ground up — cart, favorites, and auth flows running entirely client-side, with persistent state via LocalStorage.</p>
+          <div class="flex flex-wrap gap-2 mb-7">
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">HTML5</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">Tailwind CSS</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">JavaScript</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">LocalStorage</span>
+          </div>
+          <a href="#" class="font-mono uppercase text-xs tracking-[0.15em] text-paper hover:text-proof border-b border-paper/30 pb-1 w-fit transition-colors">VIEW CASE STUDY →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 02 — LEDGER -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-paper/15 py-14 reveal">
+        <div class="bg-charcoal aspect-[4/3] relative overflow-hidden border border-paper/10 order-1 lg:order-2">
+          <svg viewBox="0 0 400 300" class="w-full h-full" aria-hidden="true">
+            <rect width="400" height="300" fill="#1A1A18"/>
+            <g stroke="#3a3834" stroke-width="1">
+              <rect x="40" y="40" width="320" height="220" fill="none"/>
+              <rect x="80" y="80" width="240" height="140" fill="none"/>
+            </g>
+            <rect x="160" y="120" width="80" height="60" fill="#E8431E"/>
+            <text x="200" y="270" text-anchor="middle" font-family="monospace" font-size="11" fill="#8A8678">RTL · ١٢٣</text>
+          </svg>
+          <span class="absolute bottom-3 left-3 font-mono text-[10px] tracking-[0.2em] text-paper/50 uppercase">FIG. 02</span>
+        </div>
+        <div class="flex flex-col order-2 lg:order-1">
+          <div class="font-mono text-xs text-paper/50 tracking-[0.15em] uppercase mb-2">2026 — Front-End / Tooling</div>
+          <h3 class="h-project text-paper mb-3">LEDGER</h3>
+          <p class="font-mono uppercase text-xs tracking-[0.12em] text-proof mb-4">Arabic-First Accounting System</p>
+          <p class="text-paper/70 leading-relaxed mb-6 max-w-md">After a VBA / Excel approach hit a wall, I rebuilt the whole workflow as a standalone web app — full right-to-left layout, dark theme, local data persistence, zero backend.</p>
+          <div class="flex flex-wrap gap-2 mb-7">
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">JavaScript</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">RTL / i18n</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">LocalStorage</span>
+          </div>
+          <a href="#" class="font-mono uppercase text-xs tracking-[0.15em] text-paper hover:text-proof border-b border-paper/30 pb-1 w-fit transition-colors">VIEW CASE STUDY →</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 03 — SPAM SHIELD -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-b border-paper/15 py-14 reveal">
+        <div class="bg-charcoal aspect-[4/3] relative overflow-hidden border border-paper/10">
+          <svg viewBox="0 0 400 300" class="w-full h-full" aria-hidden="true">
+            <rect width="400" height="300" fill="#1A1A18"/>
+            <g stroke="#8A8678" stroke-width="1">
+              <line x1="60" y1="60" x2="180" y2="140"/><line x1="180" y1="140" x2="320" y2="80"/>
+              <line x1="180" y1="140" x2="120" y2="240"/><line x1="180" y1="140" x2="300" y2="230"/>
+            </g>
+            <circle cx="60" cy="60" r="7" fill="#F2EFE6"/>
+            <circle cx="320" cy="80" r="7" fill="#F2EFE6"/>
+            <circle cx="120" cy="240" r="7" fill="#F2EFE6"/>
+            <circle cx="300" cy="230" r="7" fill="#F2EFE6"/>
+            <circle cx="180" cy="140" r="12" fill="#E8431E"/>
+          </svg>
+          <span class="absolute bottom-3 left-3 font-mono text-[10px] tracking-[0.2em] text-paper/50 uppercase">FIG. 03</span>
+        </div>
+        <div class="flex flex-col">
+          <div class="font-mono text-xs text-paper/50 tracking-[0.15em] uppercase mb-2">2025–2026 — ML / NLP</div>
+          <h3 class="h-project text-paper mb-3">SPAM SHIELD</h3>
+          <p class="font-mono uppercase text-xs tracking-[0.12em] text-proof mb-4">NLP Spam Detection Pipeline</p>
+          <p class="text-paper/70 leading-relaxed mb-6 max-w-md">A five-person team project — I owned the Logistic Regression component of a five-model ensemble, alongside Naïve Bayes, Random Forest, SVM, and SGD, for an academic NLP spam-detection system.</p>
+          <div class="flex flex-wrap gap-2 mb-7">
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">Python</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">Scikit-learn</span>
+            <span class="border border-paper/25 font-mono text-[10px] uppercase tracking-wide px-3 py-1.5 text-paper/70">NLP</span>
+          </div>
+          <a href="#" class="font-mono uppercase text-xs tracking-[0.15em] text-paper hover:text-proof border-b border-paper/30 pb-1 w-fit transition-colors">VIEW CASE STUDY →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 7. CONTACT / PROPOSAL FORM (light) ============================================================ -->
+  <section id="contact" class="relative bg-paper text-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-ink/50 border-b border-ink/15 py-4">
+        <span>/ 07 — GET IN TOUCH</span>
+        <span>P. 007</span>
+      </div>
+
+      <h2 class="h-section text-ink pt-12 reveal">START A<br/>PROJECT.</h2>
+      <p class="text-ink/70 text-base md:text-lg max-w-xl mt-6 mb-14 reveal">Nine quick questions. No account, no spam — answers go straight to my inbox.</p>
+
+      <div class="max-w-2xl pb-24">
+
+        <!-- progress -->
+        <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.15em] uppercase text-ink/50 mb-8">
+          <span id="step-label">STEP 01 // 09</span>
+          <div class="flex-1 h-[2px] bg-ink/15 mx-4 relative">
+            <div id="step-fill" class="absolute inset-y-0 left-0 bg-proof" style="width:11%"></div>
+          </div>
+        </div>
+
+        <form id="proposal-form" novalidate>
+
+          <div class="step active" data-step="1">
+            <p class="font-mono text-proof text-sm mb-3">01 //</p>
+            <label for="q-name" class="h-project text-3xl md:text-4xl block mb-6">What's your name?</label>
+            <input id="q-name" type="text" required placeholder="Your full name" autocomplete="name"
+                   class="w-full bg-transparent border-b-2 border-ink/30 focus:border-proof py-3 text-xl outline-none placeholder:text-ink/30" />
+          </div>
+
+          <div class="step" data-step="2">
+            <p class="font-mono text-proof text-sm mb-3">02 // <span class="text-ink/40">(optional)</span></p>
+            <label for="q-company" class="h-project text-3xl md:text-4xl block mb-6">Company name?</label>
+            <input id="q-company" type="text" placeholder="If you have one" autocomplete="organization"
+                   class="w-full bg-transparent border-b-2 border-ink/30 focus:border-proof py-3 text-xl outline-none placeholder:text-ink/30" />
+          </div>
+
+          <div class="step" data-step="3">
+            <p class="font-mono text-proof text-sm mb-3">03 //</p>
+            <p class="h-project text-3xl md:text-4xl block mb-6">What do you need?</p>
+            <div class="grid grid-cols-2 gap-3" data-group="service">
+              <input type="radio" name="service" value="ERP" id="s-erp" class="peer/erp hidden">
+              <label for="s-erp" class="opt-box peer-checked/erp:bg-proof peer-checked/erp:text-paper peer-checked/erp:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">ERP</label>
+
+              <input type="radio" name="service" value="E-Commerce" id="s-ecom" class="peer/ecom hidden">
+              <label for="s-ecom" class="opt-box peer-checked/ecom:bg-proof peer-checked/ecom:text-paper peer-checked/ecom:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">E-Commerce</label>
+
+              <input type="radio" name="service" value="UI/UX" id="s-uiux" class="peer/uiux hidden">
+              <label for="s-uiux" class="opt-box peer-checked/uiux:bg-proof peer-checked/uiux:text-paper peer-checked/uiux:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">UI/UX</label>
+
+              <input type="radio" name="service" value="Consultation" id="s-consult" class="peer/consult hidden">
+              <label for="s-consult" class="opt-box peer-checked/consult:bg-proof peer-checked/consult:text-paper peer-checked/consult:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">Consultation</label>
+            </div>
+          </div>
+
+          <div class="step" data-step="4">
+            <p class="font-mono text-proof text-sm mb-3">04 //</p>
+            <p class="h-project text-3xl md:text-4xl block mb-6">Business stage?</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" data-group="stage">
+              <input type="radio" name="stage" value="Early" id="st-early" class="peer/early hidden">
+              <label for="st-early" class="opt-box peer-checked/early:bg-proof peer-checked/early:text-paper peer-checked/early:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">Early</label>
+
+              <input type="radio" name="stage" value="Established" id="st-est" class="peer/est hidden">
+              <label for="st-est" class="opt-box peer-checked/est:bg-proof peer-checked/est:text-paper peer-checked/est:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">Established</label>
+
+              <input type="radio" name="stage" value="Scaling" id="st-scale" class="peer/scale hidden">
+              <label for="st-scale" class="opt-box peer-checked/scale:bg-proof peer-checked/scale:text-paper peer-checked/scale:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">Scaling</label>
+            </div>
+          </div>
+
+          <div class="step" data-step="5">
+            <p class="font-mono text-proof text-sm mb-3">05 //</p>
+            <p class="h-project text-3xl md:text-4xl block mb-6">What's the timeline?</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" data-group="timeline">
+              <input type="radio" name="timeline" value="ASAP" id="tl-asap" class="peer/asap hidden">
+              <label for="tl-asap" class="opt-box peer-checked/asap:bg-proof peer-checked/asap:text-paper peer-checked/asap:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">ASAP</label>
+
+              <input type="radio" name="timeline" value="1-3 Months" id="tl-13" class="peer/m13 hidden">
+              <label for="tl-13" class="opt-box peer-checked/m13:bg-proof peer-checked/m13:text-paper peer-checked/m13:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">1–3 Months</label>
+
+              <input type="radio" name="timeline" value="Flexible" id="tl-flex" class="peer/flex hidden">
+              <label for="tl-flex" class="opt-box peer-checked/flex:bg-proof peer-checked/flex:text-paper peer-checked/flex:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-4 py-5 text-center cursor-pointer">Flexible</label>
+            </div>
+          </div>
+
+          <div class="step" data-step="6">
+            <p class="font-mono text-proof text-sm mb-3">06 // <span class="text-ink/40">(optional)</span></p>
+            <label for="q-refs" class="h-project text-3xl md:text-4xl block mb-6">References or inspiration?</label>
+            <input id="q-refs" type="text" placeholder="Links, separated by commas"
+                   class="w-full bg-transparent border-b-2 border-ink/30 focus:border-proof py-3 text-xl outline-none placeholder:text-ink/30" />
+          </div>
+
+          <div class="step" data-step="7">
+            <p class="font-mono text-proof text-sm mb-3">07 //</p>
+            <p class="h-project text-2xl md:text-4xl block mb-6">How did you find me?</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" data-group="source">
+              <input type="radio" name="source" value="TikTok" id="src-tt" class="peer/tt hidden">
+              <label for="src-tt" class="opt-box peer-checked/tt:bg-proof peer-checked/tt:text-paper peer-checked/tt:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-3 py-4 text-center cursor-pointer">TikTok</label>
+
+              <input type="radio" name="source" value="Instagram" id="src-ig" class="peer/ig hidden">
+              <label for="src-ig" class="opt-box peer-checked/ig:bg-proof peer-checked/ig:text-paper peer-checked/ig:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-3 py-4 text-center cursor-pointer">Instagram</label>
+
+              <input type="radio" name="source" value="Referral" id="src-ref" class="peer/ref hidden">
+              <label for="src-ref" class="opt-box peer-checked/ref:bg-proof peer-checked/ref:text-paper peer-checked/ref:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-3 py-4 text-center cursor-pointer">Referral</label>
+
+              <input type="radio" name="source" value="Google" id="src-go" class="peer/go hidden">
+              <label for="src-go" class="opt-box peer-checked/go:bg-proof peer-checked/go:text-paper peer-checked/go:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-3 py-4 text-center cursor-pointer">Google</label>
+
+              <input type="radio" name="source" value="LinkedIn" id="src-li" class="peer/li hidden">
+              <label for="src-li" class="opt-box peer-checked/li:bg-proof peer-checked/li:text-paper peer-checked/li:border-proof border-2 border-ink/25 font-mono uppercase text-xs tracking-wide px-3 py-4 text-center cursor-pointer">LinkedIn</label>
+            </div>
+          </div>
+
+          <div class="step" data-step="8">
+            <p class="font-mono text-proof text-sm mb-3">08 //</p>
+            <label for="q-desc" class="h-project text-3xl md:text-4xl block mb-6">Describe the project.</label>
+            <textarea id="q-desc" required rows="5" placeholder="What are you trying to build?"
+                      class="w-full bg-transparent border-2 border-ink/30 focus:border-proof p-4 text-lg outline-none placeholder:text-ink/30 resize-none"></textarea>
+          </div>
+
+          <div class="step" data-step="9">
+            <p class="font-mono text-proof text-sm mb-3">09 //</p>
+            <label for="q-contact" class="h-project text-3xl md:text-4xl block mb-6">Email or phone?</label>
+            <input id="q-contact" type="text" required placeholder="you@email.com or +20 ..." autocomplete="email"
+                   class="w-full bg-transparent border-b-2 border-ink/30 focus:border-proof py-3 text-xl outline-none placeholder:text-ink/30" />
+          </div>
+
+          <p id="form-error" class="font-mono text-xs text-proof uppercase tracking-wide mt-4 hidden">Please fill this in before continuing.</p>
+
+          <div class="flex items-center justify-between mt-12">
+            <button type="button" id="btn-back" class="font-mono uppercase text-xs tracking-[0.15em] text-ink/50 hover:text-ink disabled:opacity-0 transition-colors" disabled>← Back</button>
+            <button type="button" id="btn-next" class="bg-ink text-paper font-mono uppercase text-xs tracking-[0.15em] px-7 py-4 hover:bg-proof transition-colors">Next →</button>
+          </div>
+        </form>
+
+        <!-- success state -->
+        <div id="form-success" class="hidden">
+          <p class="font-mono text-proof text-sm mb-3">RECEIVED //</p>
+          <h3 class="h-project text-3xl md:text-4xl mb-6">Proposal locked in.</h3>
+          <p class="text-ink/70 leading-relaxed mb-8 max-w-md">Your answers are compiled below. Hit one of these to actually send it through — there's no backend wired up yet, so pick your channel.</p>
+          <div class="flex flex-wrap gap-4">
+            <a id="mailto-link" href="#" class="bg-ink text-paper font-mono uppercase text-xs tracking-[0.15em] px-6 py-4 hover:bg-proof transition-colors">Send via Email →</a>
+            <a id="wa-link" href="#" target="_blank" rel="noopener" class="border-2 border-ink font-mono uppercase text-xs tracking-[0.15em] px-6 py-4 hover:bg-ink hover:text-paper transition-colors">Send via WhatsApp →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ 8. FOOTER (dark) ============================================================ -->
+  <footer id="site-footer" class="relative bg-ink">
+    <div class="px-5 md:px-10 lg:px-16">
+      <div class="flex items-center justify-between font-mono text-[11px] tracking-[0.18em] uppercase text-paper/50 border-b border-paper/15 py-4">
+        <span>/ 08 — END OF FILE</span>
+        <span>P. 008</span>
+      </div>
+
+      <div class="py-16 md:py-24">
+        <h3 class="h-foot text-paper reveal">LET'S BUILD<br/>SOMETHING THAT<br/>HOLDS UP.</h3>
+        <a href="https://wa.me/201020735937" target="_blank" rel="noopener" class="inline-flex mt-9 items-center gap-3 bg-proof text-ink font-mono uppercase text-xs tracking-[0.15em] px-6 py-4 hover:bg-paper transition-colors reveal">
+          Start a conversation →
+        </a>
+      </div>
+
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-paper/15 py-8">
+        <p class="font-mono text-[11px] tracking-[0.15em] uppercase text-paper/50">© <span id="year"></span> MOHAMED AYMAN. ALL RIGHTS RESERVED.</p>
+
+        <div class="flex gap-6 font-mono text-[11px] tracking-[0.15em] uppercase text-paper/60">
+          <!-- [EDIT:SOCIAL] -->
+          <a href="https://instagram.com/moham3d_a6man" target="_blank" rel="noopener" class="hover:text-proof transition-colors">Instagram</a>
+          <a href="https://www.tiktok.com/@mohamedayman2422" target="_blank" rel="noopener" class="hover:text-proof transition-colors">TikTok</a>
+          <a href="https://www.facebook.com/mohamed.ayman.569025/" target="_blank" rel="noopener" class="hover:text-proof transition-colors">Facebook</a>
+          <a href="https://github.com/madva33" target="_blank" rel="noopener" class="hover:text-proof transition-colors">GitHub</a>
+          <a href="https://linkedin.com/in/mohamed-ayman-3967ab324" target="_blank" rel="noopener" class="hover:text-proof transition-colors">LinkedIn</a>
+        </div>
+
+        <p class="font-mono text-[11px] tracking-[0.15em] uppercase text-paper/40">Crafted with focus.</p>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
