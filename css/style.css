@@ -1,9 +1,7 @@
-/* ---------- hard reset for brutalist edges ---------- */
   *, *::before, *::after { border-radius: 0 !important; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; }
 
-  /* ---------- display type scale ---------- */
   .f-display      { font-family: 'Anton', sans-serif; text-transform: uppercase; }
   .h-hero         { font-family: 'Anton', sans-serif; font-size: clamp(3.1rem, 14.5vw, 11.5rem); line-height: 0.86; letter-spacing: -0.01em; }
   .h-section      { font-family: 'Anton', sans-serif; font-size: clamp(2.3rem, 7.6vw, 5.25rem); line-height: 0.93; letter-spacing: -0.01em; }
@@ -11,10 +9,9 @@
   .h-project      { font-family: 'Anton', sans-serif; font-size: clamp(2.4rem, 7.5vw, 5.25rem); line-height: 0.94; letter-spacing: -0.01em; }
   .h-foot         { font-family: 'Anton', sans-serif; font-size: clamp(2.4rem, 9vw, 6.5rem); line-height: 0.92; letter-spacing: -0.01em; }
 
-  /* ---------- focus / a11y ---------- */
   :focus-visible { outline: 2px solid #E8431E; outline-offset: 3px; }
 
-  /* ---------- scroll reveal ---------- */
+ 
   .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s cubic-bezier(.16,.8,.24,1), transform .7s cubic-bezier(.16,.8,.24,1); }
   .reveal.is-visible { opacity: 1; transform: none; }
   .reveal[data-d="1"] { transition-delay: .08s; }
@@ -26,10 +23,10 @@
     html { scroll-behavior: auto; }
   }
 
-  /* ---------- top reading-progress bar ---------- */
+ 
   #progress-bar { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: #E8431E; z-index: 70; transition: width .1s linear; }
 
-  /* ---------- left spine (desktop only) ---------- */
+
   .spine {
     position: fixed; left: 0; top: 0; height: 100vh; width: 34px;
     display: none; align-items: center; justify-content: center;
@@ -42,7 +39,6 @@
   }
   @media (min-width: 1024px) { .spine { display: flex; } }
 
-  /* ---------- right "bookmark" tab ---------- */
   .tab-msg {
     position: fixed; right: 0; top: 58%; transform: translateY(-50%);
     z-index: 45; background: #E8431E; color: #0E0E0D;
@@ -54,33 +50,26 @@
   @media (min-width: 1024px) { .tab-msg { display: flex; } }
   .tab-msg:hover { background: #F2EFE6; }
 
-  /* ---------- grain overlay ---------- */
   .grain {
     position: fixed; inset: 0; z-index: 55; pointer-events: none; opacity: .05;
     mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
 
-  /* ---------- hairline grid (hero only) ---------- */
   .grid-lines { position: absolute; inset: 0; display: flex; justify-content: space-between; pointer-events: none; z-index: 0; }
   .grid-lines i { width: 1px; height: 100%; background: rgba(242,239,230,0.07); }
 
-  /* ---------- mobile nav overlay ---------- */
   #mobile-nav { position: fixed; inset: 0; background: #0E0E0D; z-index: 80; transform: translateY(-100%); transition: transform .55s cubic-bezier(.16,.8,.24,1); }
   #mobile-nav.open { transform: translateY(0); }
 
-  /* ---------- custom checkbox/radio "stamp" look handled via peer-checked utilities ---------- */
   .opt-box { transition: background-color .15s ease, color .15s ease, border-color .15s ease; }
 
-  /* ---------- marquee for tech pills row (optional motion) ---------- */
   @keyframes blink { 50% { opacity: 0; } }
   .blink { animation: blink 1s step-start infinite; }
 
-  /* ---------- form step visibility ---------- */
   .step { display: none; }
   .step.active { display: block; }
 
-  /* scrollbar (subtle, webkit) */
   ::-webkit-scrollbar { width: 10px; }
   ::-webkit-scrollbar-track { background: #0E0E0D; }
   ::-webkit-scrollbar-thumb { background: #3a3834; }

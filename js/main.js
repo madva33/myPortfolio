@@ -1,7 +1,5 @@
-  // ---------- year ----------
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // ---------- scroll reveal ----------
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -13,7 +11,6 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach((el) => io.observe(el));
 
-  // ---------- nav background on scroll ----------
   const navInner = document.getElementById('nav-inner');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
@@ -26,7 +23,6 @@
     document.getElementById('progress-bar').style.width = pct + '%';
   }, { passive: true });
 
-  // ---------- mobile menu ----------
   const hamburger = document.getElementById('hamburger');
   const mobileNav = document.getElementById('mobile-nav');
   const closeMenu = document.getElementById('close-menu');
@@ -44,7 +40,6 @@
   closeMenu.addEventListener('click', closeMenuFn);
   document.querySelectorAll('[data-mnav]').forEach((a) => a.addEventListener('click', closeMenuFn));
 
-  // ---------- multi-step proposal form ----------
   const form = document.getElementById('proposal-form');
   const steps = Array.from(form.querySelectorAll('.step'));
   const total = steps.length;
@@ -113,7 +108,6 @@
       'Contact: ' + a.contact,
     ].join('\n');
 
-    // [EDIT:EMAIL] replace with your real address
     const mailto = 'mailto:mohamed336699as55@gmail.com'
       + '?subject=' + encodeURIComponent('New Project Inquiry — ' + a.name)
       + '&body=' + encodeURIComponent(bodyLines);
